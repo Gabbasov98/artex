@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper hr {
+        border-color: #fff;
+        margin: 30px 0;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="index2.html" style="display: block; margin-bottom: 20px;">
+            Главная (Не доступен лучший курс)
+        </a>
+        <a href="index3.html" style="display: block; margin-bottom: 20px;">
+            Главная (Ошибка)
+        </a>
+
+        <hr>
+
+        <a href="login.html" style="display: block; margin-bottom: 20px;">
+            Вход
+        </a>
+        <a href="reg.html" style="display: block; margin-bottom: 20px;">
+            Регистрация
+        </a>
+        <a href="account-activate.html" style="display: block; margin-bottom: 20px;">
+            Активация аккаунта
+        </a>
+        <a href="pass-recovery.html" style="display: block; margin-bottom: 20px;">
+            Восстановление пароля
+        </a>
+        <a href="pass-recovery2.html" style="display: block; margin-bottom: 20px;">
+            Восстановление пароля 2
+        </a>
+
+        <hr>
+
+        <a href="deal-fiat-to-crypto.html" style="display: block; margin-bottom: 20px;">
+            Обмен фиат на крипту - Верификация
+        </a>
+        <button data-modal="verificationModal" style="border: 2px solid #fff; color: #fff; margin-bottom: 20px;">
+            Верификация
+        </button>
+        <button data-modal="verificationModal2" style="border: 2px solid #fff; color: #fff; margin-bottom: 20px;">
+            Верификация 2
+        </button>
+        <button data-modal="verificationModal3" style="border: 2px solid #fff; color: #fff; margin-bottom: 20px;">
+            Верификация 3
+        </button>
+        <button data-modal="verificationModal4" style="border: 2px solid #fff; color: #fff; margin-bottom: 20px;">
+            Верификация 4
+        </button>
+        <a href="deal-fiat-to-crypto2.html" style="display: block; margin-bottom: 20px;">
+            Обмен фиат на крипту - Верификация - Карта на проверке
+        </a>
+        <a href="deal-fiat-to-crypto3.html" style="display: block; margin-bottom: 20px;">
+            Обмен фиат на крипту - Верификация - Карта верифицирована
+        </a>
+        <a href="deal-fiat-to-crypto4.html" style="display: block; margin-bottom: 20px;">
+            Обмен фиат на крипту - Верификация - Ошибка
+        </a>
+        <a href="deal-fiat-to-crypto5.html" style="display: block; margin-bottom: 20px;">
+            Обмен фиат на крипту - Верификация - Выбор карты
+        </a>
+        <a href="deal-fiat-to-crypto6.html" style="display: block; margin-bottom: 20px;">
+            Обмен фиат на крипту - Оплата сделки - Выдача реквизитов
+        </a>
+        <a href="deal-fiat-to-crypto7.html" style="display: block; margin-bottom: 20px;">
+            Обмен фиат на крипту - Оплата сделки - просмотр реквизитов
+        </a>
+        <a href="deal-fiat-to-crypto8.html" style="display: block; margin-bottom: 20px;">
+            Обмен фиат на крипту - Оплата сделки - Проверка реквизитов
+        </a>
+        <a href="deal-fiat-to-crypto9.html" style="display: block; margin-bottom: 20px;">
+            Обмен фиат на крипту - Перевод
+        </a>
+        <a href="deal-thank.html" style="display: block; margin-bottom: 20px;">
+            Обмен фиат на крипту - Страница благодарности
+        </a>
+        <a href="deal-stoped.html" style="display: block; margin-bottom: 20px;">
+            Сделка приостановлена
+        </a>
+
+
+        <hr>
+        <button data-modal="confirmModal" style="border: 2px solid #fff; color: #fff; margin-bottom: 20px;">
+            Подтверждение
+        </button>
+        <a href="deal-crypto-to-fiat.html" style="display: block; margin-bottom: 20px;">
+            Сделка крипта-фиат - Оплата
+        </a>
+        <a href="deal-crypto-to-fiat2.html" style="display: block; margin-bottom: 20px;">
+            Сделка крипта-фиат - Обработка платежа
+        </a>
+        <a href="deal-crypto-to-fiat3.html" style="display: block; margin-bottom: 20px;">
+            Сделка крипта-фиат - Перевод - Оплата получена
+        </a>
+
+        <hr>
+        <a href="exchanges.html" style="display: block; margin-bottom: 20px;">
+            История обменов
+        </a>
+        <a href="exchanges-empty.html" style="display: block; margin-bottom: 20px;">
+            История обменов (Пусто)
+        </a>
+        <a href="partners-programm.html" style="display: block; margin-bottom: 20px;">
+            Партнерская программа
+        </a>
+        <a href="partners-programm2.html" style="display: block; margin-bottom: 20px;">
+            Партнерская программа - Нет сделок
+        </a>
+        <button data-modal="withdrawModal" style="border: 2px solid #fff; color: #fff; margin-bottom: 20px;">
+            Вывод бонуса
+        </button>
+        <a href="account-settings.html" style="display: block; margin-bottom: 20px;">
+            Настройка аккаунта
+        </a>
+        <a href="cards.html" style="display: block; margin-bottom: 20px;">
+            Карты
+        </a>
+        <a href="cards-empty.html" style="display: block; margin-bottom: 20px;">
+            Карты (Пусто)
+        </a>
+        <button data-modal="deleteCardModal" style="border: 2px solid #fff; color: #fff; margin-bottom: 20px;">
+            Удалить карту?
+        </button>
+
+        <hr>
+        <a href="partners.html" style="display: block; margin-bottom: 20px;">
+            Патнерам
+        </a>
+        <a href="reviews.html" style="display: block; margin-bottom: 20px;">
+            Отзывы
+        </a>
+        <button data-modal="reviewModal" style="border: 2px solid #fff; color: #fff; margin-bottom: 20px;">
+            Оставьте отзыв
+        </button>
+        <a href="contacts.html" style="display: block; margin-bottom: 20px;">
+            Контакты
+        </a>
+        <a href="info.html" style="display: block; margin-bottom: 20px;">
+            AML и KYC
+        </a>
+        <a href="info2.html" style="display: block; margin-bottom: 20px;">
+            Правила обмена
+        </a>
+
+        <code>
+
+            @@include
+            ('components/page-blocks/_filter-slider.html',{ <br>
+            "start1":"0", <br>
+            "start2":"30000", <br>
+            "min":"1000", <br>
+            "max":"100000", <br>
+            })
+
+        </code>
+    </div>
+
+
+
+
+
+
+
+    <div class="modal" id="confirmModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__title">
+                Подтверждение данных сделки #pj565448
+            </div>
+            <div class="modal__props">
+                <div class="modal-prop">
+                    <div class="modal-prop__title">Мы переведём</div>
+                    <div class="modal-prop__desc">8 752 RUB</div>
+                </div>
+                <div class="modal-prop">
+                    <div class="modal-prop__title">Ваши реквизиты</div>
+                    <div class="modal-prop__desc">4276 5500 5439 0185</div>
+                </div>
+            </div>
+            <div class="modal__nav">
+                <button class="modal__btn m-btn m-btn-green">
+                    <span>Подтвердить данные</span>
+                </button>
+                <button class="line-btn">
+                    Отменить сделку
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal verification-modal" id="verificationModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="verification-modal__top">
+                <div class="verification-modal__title text30 text24-mob bold-text">
+                    Верификация
+                </div>
+                <div class="verification-modal__desc text15 text13-mob">
+                    ~ 5-10 мин.
+                </div>
+            </div>
+            <button class="close-btn _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.2929 3.29289C19.6834 2.90237 20.3166 2.90237 20.7071 3.29289C21.0976 3.68342 21.0976 4.31658 20.7071 4.70711L13.4142 12L20.7071 19.2929C21.0976 19.6834 21.0976 20.3166 20.7071 20.7071C20.3166 21.0976 19.6834 21.0976 19.2929 20.7071L12 13.4142L4.70711 20.7071C4.31658 21.0976 3.68342 21.0976 3.29289 20.7071C2.90237 20.3166 2.90237 19.6834 3.29289 19.2929L10.5858 12L3.29289 4.70711C2.90237 4.31658 2.90237 3.68342 3.29289 3.29289C3.68342 2.90237 4.31658 2.90237 4.70711 3.29289L12 10.5858L19.2929 3.29289Z" fill="white" />
+                </svg>
+            </button>
+            <div class="verification-modal__grid">
+                <div class="verification-modal__col1">
+                    <div class="text20 text16-tablet medium-text">
+                        #cm565446
+                    </div>
+                    <div class="verification-exchange">
+                        <div class="exchange-item2">
+                            <img src="img/sber.svg" alt="" class="exchange-item2__icon">
+                            <span class="exchange-item2__title">Сбербанк</span>
+                            <span class="exchange-item2__num"> 8 752 RUB</span>
+                        </div>
+                        <div class="exchange-item2">
+                            <img src="img/btc.svg" alt="" class="exchange-item2__icon">
+                            <span class="exchange-item2__title">BTC</span>
+                            <span class="exchange-item2__num">0.0021 BTC</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="verification-modal__col2">
+                    <div class="verification-group">
+                        <div class="text20 text16-tablet bold-text">
+                            1. Введите данные карты
+                        </div>
+                        <div class="verification-group__fields grid grid2">
+                            <div class="fg fg-light fg-dynamic">
+                                <input type="text">
+                                <label>ФИО владельца карты</label>
+                            </div>
+                            <div class="fg fg-light fg-dynamic">
+                                <input type="text">
+                                <label>Email</label>
+                            </div>
+                            <div class="fg fg-light fg-dynamic _full ">
+                                <input type="text">
+                                <label>Номер карты</label>
+                                <div class="error-text">
+                                    Введите номер карты
+                                </div>
+                            </div>
+                            <div class="m-check _full">
+                                <input checked type="checkbox">
+                                <label>
+                                    <span>Запомнить карту для следующих сделок</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="verification-group _tabs-parent">
+                        <div class="text20 text16-tablet bold-text">
+                            2. Загрузите фото карты
+                        </div>
+
+                        <div class="verification-group__tabs">
+                            <div class="tab2 _tab _active" data-tab="_tab1">
+                                <span>Пластиковая карта</span>
+                            </div>
+                            <div class="tab2 _tab" data-tab="_tab2">
+                                <span>Виртуальная карта</span>
+                            </div>
+                        </div>
+                        <div class="tab-content _tab1 _active">
+
+                            <div class="card-upload">
+                                <div class="file-input  ">
+                                    <input type="file">
+                                    <div class="file-input__inner">
+                                        <img src="img/download.svg" alt="">
+                                        <div class="text15 text13-mob semi-bold-text">
+                                            Загрузить фото
+                                        </div>
+                                    </div>
+                                    <div class="error-text">
+                                        Загрузите фото карты
+                                    </div>
+                                </div>
+                                <div class="card-upload__qr">
+                                    <img src="img/qr.svg" alt="">
+                                    <div class="card-upload__qr-text">
+                                        <div class="card-upload__qr-title">
+                                            Загрузить фото карты <br>с телефона
+                                        </div>
+                                        <div class="card-upload__qr-desc">
+                                            Отсканируйте QR-код или
+                                            <button>отправьте ссылку</button> на страницу прикрепления фотографии на свой e-mail.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="card-guide">
+                                <div class="card-guide__content">
+                                    <div class="text17 text16-mob semi-bold-text">
+                                        Как сделать фото карты
+                                    </div>
+                                    <div class="card-guide__desc text14">
+                                        Загрузите фото лицевой стороны карты на фоне информации о сделке в левом верхнем углу экрана. Вы можете закрыть все данные карты, кроме номера.
+                                    </div>
+                                </div>
+                                <div class="card-guide__img">
+                                    <img src="img/guide.webp" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-content _tab2">
+
+                            <div class="card-upload">
+                                <div class="file-input  ">
+                                    <input type="file">
+                                    <div class="file-input__inner">
+                                        <img src="img/download.svg" alt="">
+                                        <div class="text15 text13-mob semi-bold-text">
+                                            Загрузить фото
+                                        </div>
+                                    </div>
+                                    <div class="error-text">
+                                        Загрузите фото карты
+                                    </div>
+                                </div>
+                                <div class="card-upload__qr">
+                                    <img src="img/qr.svg" alt="">
+                                    <div class="card-upload__qr-text">
+                                        <div class="card-upload__qr-title">
+                                            Загрузить фото карты <br>с телефона
+                                        </div>
+                                        <div class="card-upload__qr-desc">
+                                            Отсканируйте QR-код или
+                                            <button>отправьте ссылку</button> на страницу прикрепления фотографии на свой e-mail.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="card-guide">
+                                <div class="card-guide__content">
+                                    <div class="text17 text16-mob semi-bold-text">
+                                        Как сделать фото карты
+                                    </div>
+                                    <div class="card-guide__desc text14">
+                                        Загрузите фото лицевой стороны карты на фоне информации о сделке в левом верхнем углу экрана. Вы можете закрыть все данные карты, кроме номера.
+                                    </div>
+                                </div>
+                                <div class="card-guide__img">
+                                    <img src="img/guide.webp" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="verification-modal__nav">
+                            <button class="verification-modal__btn m-btn m-btn-green">
+                                <span>Отправить на модерацию</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal verification-modal" id="verificationModal2">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="verification-modal__top">
+                <div class="verification-modal__title text30 text24-mob bold-text">
+                    Верификация
+                </div>
+                <div class="verification-modal__desc text15 text13-mob">
+                    ~ 5-10 мин.
+                </div>
+            </div>
+            <button class="close-btn _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.2929 3.29289C19.6834 2.90237 20.3166 2.90237 20.7071 3.29289C21.0976 3.68342 21.0976 4.31658 20.7071 4.70711L13.4142 12L20.7071 19.2929C21.0976 19.6834 21.0976 20.3166 20.7071 20.7071C20.3166 21.0976 19.6834 21.0976 19.2929 20.7071L12 13.4142L4.70711 20.7071C4.31658 21.0976 3.68342 21.0976 3.29289 20.7071C2.90237 20.3166 2.90237 19.6834 3.29289 19.2929L10.5858 12L3.29289 4.70711C2.90237 4.31658 2.90237 3.68342 3.29289 3.29289C3.68342 2.90237 4.31658 2.90237 4.70711 3.29289L12 10.5858L19.2929 3.29289Z" fill="white" />
+                </svg>
+            </button>
+            <div class="verification-modal__grid">
+                <div class="verification-modal__col1">
+                    <div class="text20 text16-tablet medium-text">
+                        #cm565446
+                    </div>
+                    <div class="verification-exchange">
+                        <div class="exchange-item2">
+                            <img src="img/sber.svg" alt="" class="exchange-item2__icon">
+                            <span class="exchange-item2__title">Сбербанк</span>
+                            <span class="exchange-item2__num"> 8 752 RUB</span>
+                        </div>
+                        <div class="exchange-item2">
+                            <img src="img/btc.svg" alt="" class="exchange-item2__icon">
+                            <span class="exchange-item2__title">BTC</span>
+                            <span class="exchange-item2__num">0.0021 BTC</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="verification-modal__col2">
+                    <div class="verification-group">
+                        <div class="text20 text16-tablet bold-text">
+                            1. Введите данные карты
+                        </div>
+                        <div class="verification-group__fields grid grid2">
+                            <div class="fg fg-light fg-dynamic">
+                                <input type="text">
+                                <label>ФИО владельца карты</label>
+                            </div>
+                            <div class="fg fg-light fg-dynamic">
+                                <input type="text">
+                                <label>Email</label>
+                            </div>
+                            <div class="fg fg-light fg-dynamic _full _error">
+                                <input type="text">
+                                <label>Номер карты</label>
+                                <div class="error-text">
+                                    Введите номер карты
+                                </div>
+                            </div>
+                            <div class="m-check _full">
+                                <input checked type="checkbox">
+                                <label>
+                                    <span>Запомнить карту для следующих сделок</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="verification-group _tabs-parent">
+                        <div class="text20 text16-tablet bold-text">
+                            2. Загрузите фото карты
+                        </div>
+
+                        <div class="verification-group__tabs">
+                            <div class="tab2 _tab _active" data-tab="_tab1">
+                                <span>Пластиковая карта</span>
+                            </div>
+                            <div class="tab2 _tab" data-tab="_tab2">
+                                <span>Виртуальная карта</span>
+                            </div>
+                        </div>
+                        <div class="tab-content _tab1 _active">
+
+                            <div class="card-upload">
+                                <div class="file-input  _error">
+                                    <input type="file">
+                                    <div class="file-input__inner">
+                                        <img src="img/download.svg" alt="">
+                                        <div class="text15 text13-mob semi-bold-text">
+                                            Загрузить фото
+                                        </div>
+                                    </div>
+                                    <div class="error-text">
+                                        Загрузите фото карты
+                                    </div>
+                                </div>
+                                <div class="card-upload__qr">
+                                    <img src="img/qr.svg" alt="">
+                                    <div class="card-upload__qr-text">
+                                        <div class="card-upload__qr-title">
+                                            Загрузить фото карты <br>с телефона
+                                        </div>
+                                        <div class="card-upload__qr-desc">
+                                            Отсканируйте QR-код или
+                                            <button>отправьте ссылку</button> на страницу прикрепления фотографии на свой e-mail.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="card-guide">
+                                <div class="card-guide__content">
+                                    <div class="text17 text16-mob semi-bold-text">
+                                        Как сделать фото карты
+                                    </div>
+                                    <div class="card-guide__desc text14">
+                                        Загрузите фото лицевой стороны карты на фоне информации о сделке в левом верхнем углу экрана. Вы можете закрыть все данные карты, кроме номера.
+                                    </div>
+                                </div>
+                                <div class="card-guide__img">
+                                    <img src="img/guide.webp" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-content _tab2">
+
+                            <div class="card-upload">
+                                <div class="file-input  _error">
+                                    <input type="file">
+                                    <div class="file-input__inner">
+                                        <img src="img/download.svg" alt="">
+                                        <div class="text15 text13-mob semi-bold-text">
+                                            Загрузить фото
+                                        </div>
+                                    </div>
+                                    <div class="error-text">
+                                        Загрузите фото карты
+                                    </div>
+                                </div>
+                                <div class="card-upload__qr">
+                                    <img src="img/qr.svg" alt="">
+                                    <div class="card-upload__qr-text">
+                                        <div class="card-upload__qr-title">
+                                            Загрузить фото карты <br>с телефона
+                                        </div>
+                                        <div class="card-upload__qr-desc">
+                                            Отсканируйте QR-код или
+                                            <button>отправьте ссылку</button> на страницу прикрепления фотографии на свой e-mail.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="card-guide">
+                                <div class="card-guide__content">
+                                    <div class="text17 text16-mob semi-bold-text">
+                                        Как сделать фото карты
+                                    </div>
+                                    <div class="card-guide__desc text14">
+                                        Загрузите фото лицевой стороны карты на фоне информации о сделке в левом верхнем углу экрана. Вы можете закрыть все данные карты, кроме номера.
+                                    </div>
+                                </div>
+                                <div class="card-guide__img">
+                                    <img src="img/guide.webp" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="verification-modal__nav">
+                            <button class="verification-modal__btn m-btn m-btn-green">
+                                <span>Отправить на модерацию</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal verification-modal" id="verificationModal3">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="verification-modal__top">
+                <div class="verification-modal__title text30 text24-mob bold-text">
+                    Верификация
+                </div>
+                <div class="verification-modal__desc text15 text13-mob">
+                    ~ 5-10 мин.
+                </div>
+            </div>
+            <button class="close-btn _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.2929 3.29289C19.6834 2.90237 20.3166 2.90237 20.7071 3.29289C21.0976 3.68342 21.0976 4.31658 20.7071 4.70711L13.4142 12L20.7071 19.2929C21.0976 19.6834 21.0976 20.3166 20.7071 20.7071C20.3166 21.0976 19.6834 21.0976 19.2929 20.7071L12 13.4142L4.70711 20.7071C4.31658 21.0976 3.68342 21.0976 3.29289 20.7071C2.90237 20.3166 2.90237 19.6834 3.29289 19.2929L10.5858 12L3.29289 4.70711C2.90237 4.31658 2.90237 3.68342 3.29289 3.29289C3.68342 2.90237 4.31658 2.90237 4.70711 3.29289L12 10.5858L19.2929 3.29289Z" fill="white" />
+                </svg>
+            </button>
+            <div class="verification-modal__grid">
+                <div class="verification-modal__col1">
+                    <div class="text20 text16-tablet medium-text">
+                        #cm565446
+                    </div>
+                    <div class="verification-exchange">
+                        <div class="exchange-item2">
+                            <img src="img/sber.svg" alt="" class="exchange-item2__icon">
+                            <span class="exchange-item2__title">Сбербанк</span>
+                            <span class="exchange-item2__num"> 8 752 RUB</span>
+                        </div>
+                        <div class="exchange-item2">
+                            <img src="img/btc.svg" alt="" class="exchange-item2__icon">
+                            <span class="exchange-item2__title">BTC</span>
+                            <span class="exchange-item2__num">0.0021 BTC</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="verification-modal__col2">
+                    <div class="verification-group">
+                        <div class="text20 text16-tablet bold-text">
+                            1. Введите данные карты
+                        </div>
+                        <div class="verification-group__fields grid grid2">
+                            <div class="fg fg-light fg-dynamic">
+                                <input type="text">
+                                <label>ФИО владельца карты</label>
+                            </div>
+                            <div class="fg fg-light fg-dynamic">
+                                <input type="text">
+                                <label>Email</label>
+                            </div>
+                            <div class="fg fg-light fg-dynamic _full ">
+                                <input type="text">
+                                <label>Номер карты</label>
+                                <div class="error-text">
+                                    Введите номер карты
+                                </div>
+                            </div>
+                            <div class="m-check _full">
+                                <input checked type="checkbox">
+                                <label>
+                                    <span>Запомнить карту для следующих сделок</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="verification-group _tabs-parent">
+                        <div class="text20 text16-tablet bold-text">
+                            2. Загрузите фото карты
+                        </div>
+
+                        <div class="verification-group__tabs">
+                            <div class="tab2 _tab _active" data-tab="_tab1">
+                                <span>Пластиковая карта</span>
+                            </div>
+                            <div class="tab2 _tab" data-tab="_tab2">
+                                <span>Виртуальная карта</span>
+                            </div>
+                        </div>
+                        <div class="tab-content _tab1 _active">
+
+
+                            <div class="upload-success">
+                                <img src="img/check6.svg" alt="">
+                                <div class="text18 text15-mob">Фото карты успешно загружено</div>
+                            </div>
+
+
+                            <div class="card-guide">
+                                <div class="card-guide__content">
+                                    <div class="text17 text16-mob semi-bold-text">
+                                        Как сделать фото карты
+                                    </div>
+                                    <div class="card-guide__desc text14">
+                                        Загрузите фото лицевой стороны карты на фоне информации о сделке в левом верхнем углу экрана. Вы можете закрыть все данные карты, кроме номера.
+                                    </div>
+                                </div>
+                                <div class="card-guide__img">
+                                    <img src="img/guide.webp" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-content _tab2">
+
+
+                            <div class="upload-success">
+                                <img src="img/check6.svg" alt="">
+                                <div class="text18 text15-mob">Фото карты успешно загружено</div>
+                            </div>
+
+
+                            <div class="card-guide">
+                                <div class="card-guide__content">
+                                    <div class="text17 text16-mob semi-bold-text">
+                                        Как сделать фото карты
+                                    </div>
+                                    <div class="card-guide__desc text14">
+                                        Загрузите фото лицевой стороны карты на фоне информации о сделке в левом верхнем углу экрана. Вы можете закрыть все данные карты, кроме номера.
+                                    </div>
+                                </div>
+                                <div class="card-guide__img">
+                                    <img src="img/guide.webp" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="verification-modal__nav">
+                            <button class="verification-modal__btn m-btn m-btn-green">
+                                <span>Отправить на модерацию</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal verification-modal" id="verificationModal4">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="verification-modal__top">
+                <div class="verification-modal__title text30 text24-mob bold-text">
+                    Верификация
+                </div>
+                <div class="verification-modal__desc text15 text13-mob">
+                    ~ 5-10 мин.
+                </div>
+            </div>
+            <button class="close-btn _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.2929 3.29289C19.6834 2.90237 20.3166 2.90237 20.7071 3.29289C21.0976 3.68342 21.0976 4.31658 20.7071 4.70711L13.4142 12L20.7071 19.2929C21.0976 19.6834 21.0976 20.3166 20.7071 20.7071C20.3166 21.0976 19.6834 21.0976 19.2929 20.7071L12 13.4142L4.70711 20.7071C4.31658 21.0976 3.68342 21.0976 3.29289 20.7071C2.90237 20.3166 2.90237 19.6834 3.29289 19.2929L10.5858 12L3.29289 4.70711C2.90237 4.31658 2.90237 3.68342 3.29289 3.29289C3.68342 2.90237 4.31658 2.90237 4.70711 3.29289L12 10.5858L19.2929 3.29289Z" fill="white" />
+                </svg>
+            </button>
+            <div class="verification-modal__grid">
+                <div class="verification-modal__col1">
+                    <div class="text20 text16-tablet medium-text">
+                        #cm565446
+                    </div>
+                    <div class="verification-exchange">
+                        <div class="exchange-item2">
+                            <img src="img/sber.svg" alt="" class="exchange-item2__icon">
+                            <span class="exchange-item2__title">Сбербанк</span>
+                            <span class="exchange-item2__num"> 8 752 RUB</span>
+                        </div>
+                        <div class="exchange-item2">
+                            <img src="img/btc.svg" alt="" class="exchange-item2__icon">
+                            <span class="exchange-item2__title">BTC</span>
+                            <span class="exchange-item2__num">0.0021 BTC</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="verification-modal__col2">
+                    <div class="verification-group">
+                        <div class="text20 text16-tablet bold-text">
+                            1. Введите данные карты
+                        </div>
+                        <div class="verification-group__fields grid grid2">
+                            <div class="fg fg-light fg-dynamic">
+                                <input type="text">
+                                <label>ФИО владельца карты</label>
+                            </div>
+                            <div class="fg fg-light fg-dynamic">
+                                <input type="text">
+                                <label>Email</label>
+                            </div>
+                            <div class="fg fg-light fg-dynamic _full ">
+                                <input type="text">
+                                <label>Номер карты</label>
+                                <div class="error-text">
+                                    Введите номер карты
+                                </div>
+                            </div>
+                            <div class="m-check _full">
+                                <input checked type="checkbox">
+                                <label>
+                                    <span>Запомнить карту для следующих сделок</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="verification-group _tabs-parent">
+                        <div class="text20 text16-tablet bold-text">
+                            2. Загрузите фото карты
+                        </div>
+
+
+
+                        <div class="card-upload">
+                            <div class="file-input  ">
+                                <input type="file">
+                                <div class="file-input__inner">
+                                    <img src="img/download.svg" alt="">
+                                    <div class="text15 text13-mob semi-bold-text">
+                                        Загрузить фото
+                                    </div>
+                                </div>
+                                <div class="error-text">
+                                    Загрузите фото карты
+                                </div>
+                            </div>
+                            <div class="card-upload__qr">
+                                <img src="img/qr.svg" alt="">
+                                <div class="card-upload__qr-text">
+                                    <div class="card-upload__qr-title">
+                                        Загрузить фото карты <br>с телефона
+                                    </div>
+                                    <div class="card-upload__qr-desc">
+                                        Отсканируйте QR-код или
+                                        <button>отправьте ссылку</button> на страницу прикрепления фотографии на свой e-mail.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="card-guide">
+                            <div class="card-guide__content">
+                                <div class="text17 text16-mob semi-bold-text">
+                                    Как сделать фото карты
+                                </div>
+                                <div class="card-guide__desc text14">
+                                    Загрузите фото лицевой стороны карты на фоне информации о сделке в левом верхнем углу экрана. Вы можете закрыть все данные карты, кроме номера.
+                                </div>
+                            </div>
+                            <div class="card-guide__img">
+                                <img src="img/guide.webp" alt="">
+                            </div>
+                        </div>
+
+
+                        <div class="verification-modal__nav">
+                            <button class="verification-modal__btn m-btn m-btn-green">
+                                <span>Отправить на модерацию</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal withdraw-modal" id="withdrawModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__title">
+                Вывод партнёрского бонуса
+            </div>
+            <form action="" class="withdraw-form">
+                <div class="withdraw-form__fields">
+                    <div class="fg">
+                        <input type="text" value="1.05">
+                        <label>
+                            Сумма
+                        </label>
+                        <button type="button" class="fg__btn">
+                            <span>Все средства</span>
+                        </button>
+                    </div>
+                    <div class="fg">
+                        <input type="text" value="1N4Qbzg6LSXUXyXu2MDuGfzxwMA7do8AyL">
+                        <label>
+                            Реквизиты
+                        </label>
+                    </div>
+                </div>
+                <div class="hint-block">
+                    <div class="hint-block__text">
+                        Внимание! После создания заявки кошелек сохранится в системе и следующие выплаты будут возможны только на этот кошелек. Изменить кошелек можно через техподдержку.
+                    </div>
+                </div>
+                <div class="withdraw-form__nav">
+                    <button class="withdraw-form__btn m-btn m-btn-green">
+                        <span>Вывести средства</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal delete-modal" id="deleteCardModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.2929 3.29289C19.6834 2.90237 20.3166 2.90237 20.7071 3.29289C21.0976 3.68342 21.0976 4.31658 20.7071 4.70711L13.4142 12L20.7071 19.2929C21.0976 19.6834 21.0976 20.3166 20.7071 20.7071C20.3166 21.0976 19.6834 21.0976 19.2929 20.7071L12 13.4142L4.70711 20.7071C4.31658 21.0976 3.68342 21.0976 3.29289 20.7071C2.90237 20.3166 2.90237 19.6834 3.29289 19.2929L10.5858 12L3.29289 4.70711C2.90237 4.31658 2.90237 3.68342 3.29289 3.29289C3.68342 2.90237 4.31658 2.90237 4.70711 3.29289L12 10.5858L19.2929 3.29289Z" fill="white" />
+                </svg>
+            </button>
+            <div class="modal__title">
+                Вы уверены что хотите удалить карту?
+            </div>
+            <div class="delete-modal__desc text16">
+                После удаления карта станет недоступной, это действие отменить нельзя
+            </div>
+            <div class="modal__nav">
+                <button class="modal__btn m-btn m-btn-green">
+                    <span>Да, удалить</span>
+                </button>
+                <button class="line-btn">
+                    Отмена
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal review-modal" id="reviewModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.2929 3.29289C19.6834 2.90237 20.3166 2.90237 20.7071 3.29289C21.0976 3.68342 21.0976 4.31658 20.7071 4.70711L13.4142 12L20.7071 19.2929C21.0976 19.6834 21.0976 20.3166 20.7071 20.7071C20.3166 21.0976 19.6834 21.0976 19.2929 20.7071L12 13.4142L4.70711 20.7071C4.31658 21.0976 3.68342 21.0976 3.29289 20.7071C2.90237 20.3166 2.90237 19.6834 3.29289 19.2929L10.5858 12L3.29289 4.70711C2.90237 4.31658 2.90237 3.68342 3.29289 3.29289C3.68342 2.90237 4.31658 2.90237 4.70711 3.29289L12 10.5858L19.2929 3.29289Z" fill="white" />
+                </svg>
+            </button>
+            <div class="review-modal__top">
+                <div class="text28 text22-mob bold-text">
+                    Оставьте отзыв
+                </div>
+                <div class="text15 text14-mob medium-text">
+                    Помогите нам стать лучше
+                </div>
+            </div>
+            <form class="review-form">
+                <div class="review-form__fields">
+                    <div class="fg fg-light fg-dynamic">
+                        <input type="text">
+                        <label>ID обмена</label>
+                    </div>
+                    <div class="fg fg-light fg-dynamic">
+                        <input type="text">
+                        <label>Email</label>
+                    </div>
+                    <div class="fg fg-light fg-dynamic _full">
+                        <textarea></textarea>
+                        <label>Текст отзыва</label>
+                    </div>
+                </div>
+                <div class="review-form__anonymous">
+                    <div class="m-switch">
+                        <input type="checkbox">
+                        <label></label>
+                    </div>
+                    <div class="text15 text14-mob semi-bold-text">
+                        Анонимно
+                    </div>
+                </div>
+                <div class="review-form__score">
+                    <div class="score-field">
+                        <input type="radio" name="score">
+                        <label>
+                            <img src="img/dislike.svg" alt="">
+                        </label>
+                    </div>
+                    <div class="score-field">
+                        <input type="radio" name="score">
+                        <label>
+                            <img src="img/like.svg" alt="">
+                        </label>
+                    </div>
+                </div>
+                <div class="m-captcha">
+                    <img src="img/captcha.png" alt="" class="m-captcha__img">
+                </div>
+
+                <button class="review-form__btn m-btn m-btn-green">
+                    <span>Отправить</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
